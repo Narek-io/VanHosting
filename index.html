@@ -3,65 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VanHosting - Minecraft Server Hosting</title>
+    <title>VanHosting - Անվճար Minecraft Հոսթինգ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://unsplash.com/photos/WLxQvbMyfas') no-repeat center center fixed;
-            background-size: cover;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
             color: #333;
+            background-image: url('https://source.unsplash.com/1600x900/?minecraft');
+            background-size: cover;
+            background-attachment: fixed;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
+        header {
+            background-color: rgba(59, 89, 152, 0.8);
+            color: #fff;
+            padding: 1em 0;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            font-size: 1.2em;
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
             color: #fff;
-            background-color: #007bff;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
-            border-radius: 5px;
+            font-weight: bold;
         }
-        .buttons a:hover {
-            background-color: #0056b3;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2em 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
         }
-        .buttons a.create-server {
-            background-color: #28a745;
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
         }
-        .buttons a.create-server:hover {
-            background-color: #218838;
+        h2 {
+            color: #3b5998;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #3b5998;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input[type="text"], form input[type="email"], form input[type="password"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+        }
+        form input[type="submit"] {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
         }
     </style>
-    <script>
-        function openServerConsole() {
-            window.open('server_console.html', '_blank', 'width=800,height=600');
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>VanHosting</h1>
-        <p>Բարի գալուստ Minecraft սերվերների հոստինգի պլատֆորմ</p>
-        <div class="buttons">
-            <a href="#register">Գրանցվել</a>
-            <a href="#login">Մուտք գործել</a>
-            <a href="#" class="create-server" onclick="openServerConsole()">Ստեղծել սերվեր</a>
+    <header>
+        <div class="container">
+            <h1>VanHosting</h1>
+            <p>Անվճար և հզոր հոսթինգ Minecraft-ի համար</p>
         </div>
-    </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#services">Ծառայություններ</a>
+            <a href="#login">Մուտք</a>
+            <a href="#register">Գրանցում</a>
+            <a href="#contact">Կապ</a>
+            <a href="#faq">ՀՏՀ</a>
+        </div>
+    </nav>
+
+    <section id="services" class="container">
+        <h2>Մեր ծառայությունները</h2>
+        <p>Մենք առաջարկում ենք անվճար և հզոր հոսթինգ ծառայություններ, որոնք ձեզ թույլ են տալիս հեշտությամբ ստեղծել և կառավարել ձեր Minecraft սերվերը:</p>
+        <ul>
+            <li>Անսահմանափակ խաղացողների քանակ</li>
+            <li>24/7 հասանելիություն</li>
+            <li>Ավտոմատ պահուստավորում</li>
+            <li>Գործիքների լայն ընտրություն և փլագիններ</li>
+        </ul>
+    </section>
+
+    <section id="login" class="container">
+        <h2>Մուտք</h2>
+        <form action="#" method="post">
+            <label for="username">Օգտատիրոջ անուն:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Գաղտնաբառ:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Մուտք գործել">
+        </form>
+    </section>
+
+    <section id="register" class="container">
+        <h2>Գրանցում</h2>
+        <form action="#" method="post">
+            <label for="username">Օգտատիրոջ անուն:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Էլ. փոստ:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Գաղտնաբառ:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Գրանցվել">
+        </form>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Կապ</h2>
+        <p>Հարցեր ունե՞ք: Կապվեք մեզ հետ հետևյալ կոնտակտային ձևով:</p>
+        <form>
+            <label for="name">Անուն:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Էլ. փոստ:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Նամակ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Ուղարկել">
+        </form>
+    </section>
+
+    <section id="faq" class="container">
+        <h2>ՀՏՀ</h2>
+        <h3>Ինչպե՞ս կարող եմ սկսել սերվեր հոսթինգը:</h3>
+        <p>Ընտրեք անվճար փաթեթը և գրանցվեք:</p>
+        <h3>Արդյո՞ք կարող եմ թարմացնել իմ սերվերը:</h3>
+        <p>Այո, դուք կարող եք ցանկացած պահի թարմացնել ձեր փաթեթը դեպի պրեմիում տարբերակը:</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VanHosting. Բոլոր իրավունքները պաշտպանված են.</p>
+    </footer>
 </body>
-</html>
+                </html>
