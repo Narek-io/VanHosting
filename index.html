@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanHosting - Հզոր Minecraft սերվերների հոստինգ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VanHosting</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Մեր Մասին</a></li>
+                <li><a href="#services">Ծառայություններ</a></li>
+                <li><a href="#contact">Կապ</a></li>
+                <li><a href="#register">Գրանցում</a></li>
+                <li><a href="#login">Մուտք</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Մեր Մասին</h2>
+            <p>VanHosting-ը տրամադրում է հզոր և հուսալի Minecraft սերվերների հոստինգ:</p>
+        </section>
+        <section id="services">
+            <h2>Ծառայություններ</h2>
+            <p>Մենք առաջարկում ենք լավագույն հոստինգի ծառայությունները, որոնք ներառում են բարձր արագություն, մշտական աջակցություն և ապահովություն:</p>
+        </section>
+        <section id="register">
+            <h2>Գրանցում</h2>
+            <form action="/register" method="post">
+                <label for="username">Օգտանուն:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Գաղտնաբառ:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Գրանցվել</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>Մուտք</h2>
+            <form action="/login" method="post">
+                <label for="login-username">Օգտանուն:</label>
+                <input type="text" id="login-username" name="login-username" required>
+                <label for="login-password">Գաղտնաբառ:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <button type="submit">Մուտք գործել</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Կապ</h2>
+            <form action="/contact" method="post">
+                <label for="contact-name">Անուն:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="contact-email">Էլ. հասցե:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <label for="contact-message">Հաղորդագրություն:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+                <button type="submit">Ուղարկել</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 VanHosting - Բոլոր իրավունքները պաշտպանված են:</p>
+    </footer>
+</body>
+</html>
