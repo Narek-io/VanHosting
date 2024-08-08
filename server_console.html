@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Սերվերի Կոնսոլ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Սերվերի Կոնսոլ</h1>
+        <p>Այստեղ կարող եք կառավարել ձեր սերվերը:</p>
+        <div class="buttons">
+            <a href="#" class="button" onclick="startServer()">Սկսել սերվերը</a>
+            <a href="#" class="button" onclick="stopServer()">Կանգնեցնել սերվերը</a>
+            <a href="#" class="button" onclick="managePlugins()">Կառավարել պլագիները</a>
+        </div>
+        <div id="server-info">
+            <p>Սերվերի ինֆորմացիան այստեղ կցուցադրվի:</p>
+        </div>
+    </div>
+
+    <script>
+        function startServer() {
+            alert('Սերվերը սկսված է:');
+        }
+
+        function stopServer() {
+            alert('Սերվերը կանգնեցված է:');
+        }
+
+        function managePlugins() {
+            alert('Պլագիների կառավարումը հասանելի չէ այս պահին:');
+        }
+    </script>
+</body>
+</html>
